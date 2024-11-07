@@ -1,15 +1,37 @@
 <template>
   <div class="about">
-    <h1>Website ini dibuat untuk belajar Vue.js</h1>
+    <div class="content">
+      <h1>Website ini dibuat untuk belajar Vue.js</h1>
+      <button @click="alert('Button clicked!')">Learn More</button>
+    </div>
   </div>
 </template>
 
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
+<style scoped>
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.content h1 {
+  margin-bottom: 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
 }
 </style>
