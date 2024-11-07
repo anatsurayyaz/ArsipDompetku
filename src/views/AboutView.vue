@@ -1,8 +1,11 @@
 <template>
   <div class="about">
     <div class="content">
-      <h1>Website ini dibuat untuk belajar Vue.js</h1>
-      <button @click="alert('Button clicked!')">Learn More</button>
+      <h1>Website ini dibuat untuk belajar Vue.js.</h1>
+      <h1>Klik Button untuk mencoba</h1>
+      <router-link to="/demo">
+        <button>Go to Demo</button>
+      </router-link>
     </div>
   </div>
 </template>
